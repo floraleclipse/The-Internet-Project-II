@@ -6,7 +6,7 @@
  */
 
 async function getCat() {
-  let response = await fetch("https://api.thecatapi.com/v1/images/search");
+  let response = await fetch("https://cdn2.thecatapi.com/images/ba.jpg");
   if (response.ok) {
     let json = await response.json();
     console.log(json);
