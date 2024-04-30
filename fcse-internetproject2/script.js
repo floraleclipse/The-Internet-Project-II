@@ -9,6 +9,8 @@ async function getCat() {
   let response = await fetch("https://cdn2.thecatapi.com/images/ba.jpg");
   if (response.ok) {
     let json = await response.json();
+    let catimg = json[0].url; 
+    document.getElementById("cat").src = catimg; 
     console.log(json);
   } else {
     alert("HTTP-Error: " + response.status);
