@@ -4,13 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>guess & get a cat!</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <img id="cat" onclick="getCat()" />
-  <script src="script.js"></script>
+    <h1>guess the number and get a cat!</h1>
+    <p>enter a number between 1 and 30.</p>
+    <p>you only get 4 guesses:</p>
+    <input type="number" id="guessInput">
+    <button id="guessButton">guess</button>
+    <p id="result"></p>
+    <img id="cat" onclick="getCat()" />
+    <script src="script.js"></script>
 </body>
 
 </html>
