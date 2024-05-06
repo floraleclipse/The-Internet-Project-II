@@ -59,8 +59,8 @@ async function getCat() {
 getCat();
 
 guess_button_pressed(){
-    check_guess(/*generated_number,guessInput.value);*/
-}
+    check_guess(/*generated_number,guessInput.value);
+}*/
 
 
 
