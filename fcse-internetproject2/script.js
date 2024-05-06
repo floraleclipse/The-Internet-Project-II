@@ -21,7 +21,6 @@ async function getCat() {
             }
         }
 
-
   let catCount = 0;
         let randomNumber = Math.floor(Math.random() * 20) + 1;
         console.log(randomNumber);
@@ -40,6 +39,7 @@ async function getCat() {
             } else {
                 document.getElementById("result").innerText = "Try again! The number is lower.";
             }
+        }
 /* <<<<<<< HEAD
         }
 
