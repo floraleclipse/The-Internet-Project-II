@@ -4,6 +4,9 @@
  * Cat images API endpoint:
  * https://api.thecatapi.com/v1/images/search
  */
+let guessInput = document.getElementById("guessInput");
+let user_guesses = 0;
+
 
 
   let catCount = 0;
@@ -39,3 +42,33 @@
         }
 
 getCat();
+
+guess_button_pressed(){
+    check_guess(/*generated_number*/,guessInput.value);
+}
+
+
+
+//function that runs when the user wants to see if their guess is correct
+function check_guess (generated_number, user_guess){
+    let guess_feedback = "";
+    if (user_guesses < 5){
+        user_guesses++;
+        if (user_guess == generated_number){
+            guess_feedback = "correct";
+            return guess_feedback;
+        }
+        else if (user_guess < generated_number){
+            guess_feedback = "guess too low";
+            return guess_feedback;
+        }
+        else if (user_guess > generated_number){
+            guess_feedback = "guess too high";
+            return guess_feedback;
+        }
+        else (){
+            guess_feedback = "incorrect format";
+            return guess_feedback;
+        }
+    }
+}
