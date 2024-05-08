@@ -14,9 +14,11 @@
     <p>You only get 4 guesses:</p>
     <input type="number" id="guessInput">
     <button id="guessButton" onclick= "checkGuess()"; >Guess </button>
-    <p id="result"></p>
+    <p style="color:red;" id="result"></p>
     <img id="cat" onclick="getCat()" />
-    <p id="fact"></p>
+    <p style="color:blue;" id = "fact"></p>
+    <input type="text" id="reciteYourFact">
+    <button id="recite" onclick= "reciteFact()"; >Submit </button>
     <script src="script.js"></script>
 </body>
 
